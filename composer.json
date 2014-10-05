@@ -1,0 +1,15 @@
+{
+    "name": "alexey-kupershtokh/apc-clear-cli",
+    "description": "Clear apc cache from cli",
+    "require": {
+        "crunch/fastcgi": "v1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Kupershtokh",
+            "email": "alexey.kupershtokh@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
