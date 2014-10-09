@@ -1,3 +1,6 @@
+Opcode-Cli
+==========
+
 Opcode-Cli is the command line tool for managing opcode cache.
 
 It allows you:
@@ -6,7 +9,31 @@ It allows you:
 
 It can work both via fastcgi interface (no need to expose it under your web root) and via any other web server.
 
-References:
+Installation
+============
+```bash
+composer require alexey-kupershtokh/opcode-cli
+```
+
+Usage
+=====
+
+Get opcode cache status:
+```
+php vendor/bin/opcode-cli.php --action=status
+php vendor/bin/opcode-cli.php --action=status --port 9000
+php vendor/bin/opcode-cli.php --action=status --sock=/var/run/php5-fpm.sock
+```
+
+Clear opcode cache:
+```
+php vendor/bin/opcode-cli.php --action=clear
+php vendor/bin/opcode-cli.php --action=clear --port 9000
+php vendor/bin/opcode-cli.php --action=clear --sock=/var/run/php5-fpm.sock
+```
+
+References
+==========
 - http://php.net/manual/en/book.apc.php
 - http://php.net/manual/en/book.opcache.php
 - http://www.alexfu.it/2013/10/08/clearing-apc-php-fpm-command-line.html

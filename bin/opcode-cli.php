@@ -1,7 +1,11 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+$dir = dirname(__DIR__);
+while (($dir != '/') && !is_dir($dir.'/vendor')) {
+    $dir = dirname($dir);
+}
+require_once $dir.'/vendor/autoload.php';
 
 use Crunch\FastCGI\Client as FastCGI;
 use Crunch\FastCGI\ConnectionException;
