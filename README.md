@@ -2,7 +2,6 @@ Opcode-Cli is the command line tool for managing opcode cache.
 
 It allows you:
 - invalidate web server opcode cache
-- warmup web server opcode cache
 - get status information from command line
 
 It can work both via fastcgi interface (no need to expose it under your web root) and via any other web server.

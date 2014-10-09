@@ -1,6 +1,7 @@
 {
-    "name": "alexey-kupershtokh/apc-clear-cli",
-    "description": "Clear apc cache from cli",
+    "name": "alexey-kupershtokh/opcode-cli",
+    "description": "A tool for interacting with php opcode cache (APC or OpCache) from command line.",
+    "keywords": ["FastCGI", "cli", "opcode", "opcache", "apc", "cache"],
     "require": {
         "crunch/fastcgi": "v1.0"
     },
@@ -11,5 +12,6 @@
             "email": "alexey.kupershtokh@gmail.com"
         }
     ],
+    "bin": ["bin/opcode-cli.php", "bin/opcode-cli"],
     "minimum-stability": "stable"
 }
