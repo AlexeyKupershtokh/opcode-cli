@@ -42,7 +42,7 @@ $headers = array(
 try {
     $client = new FastCGI($host, $port);
     $connection = $client->connect();
-    $request = $connection->newRequest($headers, $body);
+    $request = $connection->newRequest($headers);
     $response = $connection->request($request);
     print $response->content;
 } catch (ConnectionException $ex) {
