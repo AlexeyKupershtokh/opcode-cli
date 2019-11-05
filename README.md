@@ -1,3 +1,8 @@
+Deprecated
+==========
+
+This repo is deprecated and not maintained anymore. Use https://github.com/gordalina/cachetool instead.
+
 Opcode-Cli
 ==========
 
